@@ -1,0 +1,24 @@
+#resume {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.resume-content {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.resume-content h3 {
+    color: #007bff;
+}
+.resume-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.resume-content li {
+    margin-bottom: 15px;
+}
+.resume-content strong {
+    font-weight: bold;
+}
