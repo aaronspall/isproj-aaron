@@ -8,103 +8,169 @@
     <link rel="stylesheet" href="css/scratch-styles.css">
 </head>
 <body>
+    <!-- Back to Top Anchor -->
+    <a id="page-top"></a>
+
+    <!-- Header Section -->
     <header>
         <h1>Welcome to My Scratch Page</h1>
     </header>
+
     <main>
-        <section id="introduction">
+        <!-- About Section -->
+        <section id="introduction" class="content-section">
             <h2>About This Page</h2>
             <p>This page demonstrates my ability to write HTML and CSS from scratch.</p>
         </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="content-section">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <h3>Aaron Spallino</h3>
+                <p><strong>Diligent worker willing to offer quality work with honesty and integrity.</strong></p>
+                <address>
+                    <p>3280 Spring Day Lane, South Jordan, UT 84095</p>
+                    <p>Email: <a href="mailto:Aaronjspallino@gmail.com">Aaronjspallino@gmail.com</a></p>
+                    <p>Phone: 801-979-0088</p>
+                </address>
+
+                <h4>Experience</h4>
+                <ul>
+                    <li><strong>Mountain West Renewable Energy</strong> — Solar Sales <br> May 2024 - August 2024</li>
+                    <li><strong>Spring Hollow Assisted Living</strong> — CNA/Med Tech <br> Feb 2023 - May 2024</li>
+                    <li><strong>Patriot Motors</strong> — Lot Tech <br> June 2018 - June 2020</li>
+                </ul>
+                <!-- Other resume details omitted for brevity -->
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="favorite-activities" class="content-section">
+            <h2>My Favorite Activities</h2>
+            <ol>
+                <li>Outdoor Adventures
+                    <ul>
+                        <li>Hiking</li>
+                        <li>Camping</li>
+                        <li>Rock Climbing</li>
+                    </ul>
+                </li>
+                <li>Creative Hobbies
+                    <ul>
+                        <li>Painting</li>
+                        <li>Photography</li>
+                        <li>Writing</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Favorite Photo Section -->
+        <section id="image-example" class="content-section">
+            <h2>A Favorite Photo</h2>
+            <img src="assets/img/about/IMG_D1C19E3B4FC7-1.jpeg" alt="A scenic view">
+        </section>
+
+        <!-- Favorite Video Section -->
+        <section id="video-example" class="content-section">
+            <h2>My Favorite Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/guuUpRuF7Fk?si=7vX3L0zbs91Dgxny"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Tableau Section -->
+        <section id="tableau-example" class="content-section">
+            <h2 class="section-title">Interactive Data Visualization</h2>
+            <div class='tableauPlaceholder' id='viz1734298247130' style='position: relative; margin: 0 auto; width: 100%; max-width: 800px; height: 500px;'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Worldwide Language Devi Arnita (2)' 
+                             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldwideLanguageDevitwbxPublicversion2&#47;WorldwideLanguageDeviArnita2&#47;1_rss.png' 
+                             style='border: none;' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display: block; width: 100%; height: 100%;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='WorldwideLanguageDevitwbxPublicversion2&#47;WorldwideLanguageDeviArnita2' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldwideLanguageDevitwbxPublicversion2&#47;WorldwideLanguageDeviArnita2&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1734298247130');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '800px'; /* Adjusted to fit the layout */
+                    vizElement.style.height = '500px'; /* Adjusted height */
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '500px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '600px'; /* Slightly taller for smaller screens */
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </section>
+        
+        
+        </section>
+        
+
+        <!-- Riddle App Section -->
+        <section id="riddle-app" class="content-section">
+            <h2>Riddle Generator</h2>
+            <p id="riddle">Click the button to see a riddle!</p>
+            <p id="answer" style="display: none;">Answer will appear here...</p>
+            <button onclick="generateRiddle()">Get Riddle</button>
+            <button onclick="revealAnswer()" id="reveal-btn" style="display: none;">Reveal Answer</button>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#page-top">Back to Top</a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function generateRiddle() {
+            const riddles = [
+                { question: "What has keys but can't open locks?", answer: "A piano!" },
+                { question: "What has to be broken before you can use it?", answer: "An egg!" },
+                { question: "I speak without a mouth and hear without ears. What am I?", answer: "An echo." },
+                { question: "What comes once in a minute, twice in a moment, but never in a thousand years?", answer: "The letter 'M'." },
+                { question: "I’m tall when I’m young, and I’m short when I’m old. What am I?", answer: "A candle." }
+            ];
+            const randomIndex = Math.floor(Math.random() * riddles.length);
+            const selectedRiddle = riddles[randomIndex];
+            document.getElementById("riddle").textContent = selectedRiddle.question;
+            document.getElementById("answer").textContent = selectedRiddle.answer;
+            document.getElementById("answer").style.display = "none";
+            document.getElementById("reveal-btn").style.display = "inline-block";
+        }
+
+        function revealAnswer() {
+            document.getElementById("answer").style.display = "block";
+            document.getElementById("reveal-btn").style.display = "none";
+        }
+    </script>
 </body>
 </html>
-<section id="resume">
-    <h2>Resume</h2>
-    <div class="resume-content">
-        <h3>Aaron Spallino</h3>
-        <p><strong>Diligent worker willing to offer quality work with honesty and integrity.</strong></p>
-        <address>
-            <p>3280 Spring Day Lane, South Jordan, UT 84095</p>
-            <p>Email: <a href="mailto:Aaronjspallino@gmail.com">Aaronjspallino@gmail.com</a></p>
-            <p>Phone: 801-979-0088</p>
-        </address>
-        <h4>Experience</h4>
-        <ul>
-            <li><strong>Mountain West Renewable Energy, Orem — Solar Sales</strong> <br>
-                May 2024 - August 2024 <br>
-                Contacted new and existing customers about solar equipment needs to provide accurate information tailored to individual homes.
-            </li>
-            <li><strong>Spring Hollow Assisted Living, Orem — CNA/Med Tech</strong> <br>
-                Feb 2023 - May 2024 <br>
-                Provided consistent and dedicated care to the elderly as a nursing assistant and medical technician.
-            </li>
-            <li><strong>Patriot Motors, American Fork — Lot Tech</strong> <br>
-                June 2018 - June 2020 <br>
-                Maintained car dealership efficiency by fueling cars, performing minor vehicle fixes, and keeping the lot clean.
-            </li>
-        </ul>
-        <h4>Education</h4>
-        <ul>
-            <li><strong>Bingham High School, South Jordan</strong> — High School Diploma <br> June 2016 - June 2020</li>
-            <li><strong>JATC North, West Jordan</strong> — Nationally Certified Medical Assistant <br> June 2019 - June 2020</li>
-            <li><strong>Brigham Young University, Provo</strong> <br> August 2022 - Present</li>
-        </ul>
-        <h4>Volunteer Service</h4>
-        <ul>
-            <li><strong>Externship for Intermountain Healthcare</strong> <br> Spring 2020 <br>
-                Medical Assistant experience at Riverton Hospital dermatology center.
-            </li>
-            <li><strong>Church of Jesus Christ of Latter-day Saints</strong> <br> July 2020 - July 2022 <br>
-                Missionary service in both Arizona and the Dominican Republic (Spanish language).
-            </li>
-        </ul>
-        <h4>Skills</h4>
-        <ul>
-            <li>Fluent in Spanish</li>
-            <li>Problem-solving</li>
-            <li>Adaptable</li>
-            <li>Organized</li>
-            <li>Attention to detail</li>
-            <li>Dedicated</li>
-            <li>Progress-oriented</li>
-        </ul>
-        <h4>Awards</h4>
-        <ul>
-            <li><strong>Eagle Scout</strong> — Collected thousands of dollars in coats and toys for African refugees during Christmas.</li>
-            <li><strong>Honor Roll</strong> — Maintained a 3.98 GPA in high school and continue academic success at BYU.</li>
-        </ul>
-        <h4>Certifications</h4>
-        <ul>
-            <li>National & State Certified Medical Assistant</li>
-            <li>Certified National Library of Medicine Ambassador</li>
-            <li>Utah State Board of Education Competency Certification in MA: Anatomy/Physiology</li>
-        </ul>
-    </div>
-</section>
-#resume {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.resume-content {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-.resume-content h3 {
-    color: #007bff;
-}
-.resume-content ul {
-    list-style-type: none;
-    padding: 0;
-}
-.resume-content li {
-    margin-bottom: 15px;
-}
-.resume-content strong {
-    font-weight: bold;
-}
+
+
 
 
